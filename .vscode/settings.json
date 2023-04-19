@@ -48,10 +48,14 @@
     ],
     // Material Icon theme
     "material-icon-theme.folders.associations": {
+        "bike": "shader",
+        "domain": "resource",
+        "entities": "ngrx-entities",
         "globals": "global",
         "infrastructure": "buildkite"
     },
     "material-icon-theme.files.associations": {
+        "*.entity.ts": "sketch",
         "app.tsx": "azure",
         "globals.scss": "blink",
         "layout.tsx": "mjml",
