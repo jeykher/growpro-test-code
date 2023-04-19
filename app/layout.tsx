@@ -1,6 +1,8 @@
 import type { ReactElement, ReactNode } from 'react';
 
-import { GrowProBrand, GrowProNavbar } from '@Packages/ui/growpro-react-ts-ui';
+import { Providers } from '@App/providers';
+
+import { Navbar } from '@App/components';
 
 import '@Core/infrastructure/styles/globals/globals.scss';
 
@@ -17,16 +19,10 @@ const RootLayout = ({ children }: Props): ReactElement => {
     return (
         <html lang="es">
             <body>
-                <GrowProNavbar
-                    brand={
-                        <GrowProBrand
-                            color="#ff5766"
-                            height="28px"
-                            width="188.297px"
-                        />
-                    }
-                />
-                {children}
+                <Providers>
+                    <Navbar />
+                    {children}
+                </Providers>
             </body>
         </html>
     );

@@ -7,9 +7,12 @@ import { Button } from './components/Button/Button';
 import styles from './styles/Card.module.scss';
 
 interface Props {
+    borderColorButton?: string;
+    buttonBackground?: string;
     className?: string | undefined;
     description?: string;
     height?: string;
+    hoverButtonBackground?: string;
     imageDescription?: string;
     imagePath: string;
     style?: CSSProperties;
@@ -18,9 +21,12 @@ interface Props {
 }
 
 export const Card: ReactFC<Props> = ({
+    borderColorButton = '#333333',
+    buttonBackground = '#333333',
     className,
     description = '',
     height = '350px',
+    hoverButtonBackground = '#333333',
     imageDescription = '',
     imagePath = '',
     style,
@@ -53,9 +59,9 @@ export const Card: ReactFC<Props> = ({
         </div>
         <div className={styles.footer}>
             <Button
-                background="#7a33cc"
-                hoverBackground="#682bad"
-                borderColor="#6229a3"
+                background={buttonBackground}
+                hoverBackground={hoverButtonBackground}
+                borderColor={borderColorButton}
             >
                 Alquilar
             </Button>

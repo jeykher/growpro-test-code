@@ -1,6 +1,6 @@
 import type { ReactElement } from 'react';
 
-import { Card } from '@Packages/ui/growpro-react-ts-ui';
+import { CardList } from '@App/components';
 
 const HomePage = (): ReactElement => {
     return (
@@ -12,11 +12,7 @@ const HomePage = (): ReactElement => {
                 paddingTop: '10rem'
             }}
         >
-            <Card 
-                description='Antigua'
-                imagePath='/assets/images/baywood.jpg'
-                title='Baywood'
-            />
+            <CardList />
         </div>
     );
 };
