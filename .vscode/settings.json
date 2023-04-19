@@ -1,0 +1,105 @@
+{
+    // Activitus Bar Configuration
+    "activitusbar.views": [
+        {
+            "name": "explorer",
+            "codicon": "explorer-view-icon"
+        },
+        {
+            "name": "search",
+            "codicon": "search-view-icon"
+        },
+        {
+            "name": "scm",
+            "codicon": "source-control-view-icon"
+        },
+        {
+            "name": "debug",
+            "codicon": "run-view-icon"
+        },
+        {
+            "name": "extensions",
+            "codicon": "extensions-view-icon"
+        },
+        {
+            "name": "extension.project-manager",
+            "codicon": "folder"
+        },
+        {
+            "name": "extension.thunder-client",
+            "codicon": "symbol-event"
+        }
+    ],
+    // Bracket pair coloraized configuration
+    "brackets-pair-colorized-2.colors": [
+        "#fafafa",
+        "#9f51b6",
+        "#f7c244",
+        "#f07850",
+        "#9cdd29",
+        "#0098fa"
+    ],
+    // Eslint
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ],
+    // Material Icon theme
+    "material-icon-theme.folders.associations": {
+        "globals": "global",
+        "infrastructure": "buildkite"
+    },
+    "material-icon-theme.files.associations": {
+        "app.tsx": "azure",
+        "globals.scss": "blink",
+        "layout.tsx": "mjml",
+        "page.tsx": "contributing"
+    },
+    // Peacok Configuration
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#ff8a94",
+        "activityBar.background": "#ff8a94",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#e2ffdf",
+        "activityBarBadge.foreground": "#15202b",
+        "commandCenter.border": "#15202b99",
+        "sash.hoverBorder": "#ff8a94",
+        "statusBar.background": "#ff5766",
+        "statusBar.foreground": "#15202b",
+        "statusBarItem.hoverBackground": "#ff2438",
+        "statusBarItem.remoteBackground": "#ff5766",
+        "statusBarItem.remoteForeground": "#15202b",
+        "titleBar.activeBackground": "#ff5766",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveBackground": "#ff576699",
+        "titleBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.color": "#ff5766",
+    // SynthWave 84 Vscode Theme Configuration
+    "synthwave84.brightness": 0.45,
+    "synthwave84.disableGlow": false,
+    // Terminal integrated
+    "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
+    "terminal.integrated.fontSize": 13,
+    // TypeScript NextJS
+    "typescript.tsdk": "node_modules\\.pnpm\\typescript@5.0.4\\node_modules\\typescript\\lib",
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    // Vscode Editor
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+    },
+    "editor.fontFamily": "'Victor Mono', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+    "editor.fontWeight": "bold",
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    // Vscode Features
+    "editor.stickyTabStops": true,
+    "editor.stickyScroll.enabled": true,
+    // Vscode Workbench
+    "workbench.activityBar.visible": true
+}

@@ -2,6 +2,33 @@
     "name": "@jeykher/growpro-test-code",
     "version": "0.0.1",
     "private": true,
+    "author": "Yendes Softwares @ Jeykher Pernia Yendes <jeykheryendes@gmail.com>",
+    "bugs": {
+        "url": "https://github.com/jeykher/growpro-test-code.git/issues"
+    },
+    "description": "Growpro Jeykher Pernia Yendes Code Challengue @ App de Alquiler de Bicicletas",
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "files": [],
+    "homepage": "https://github.com/jeykher/growpro-test-code.git#readme",
+    "keywords": [
+        "Growpro",
+        "Projects",
+        "App Alquiler de Bicicletas",
+        "Code Challengue",
+        "ReactJS",
+        "NextJS",
+        "TypeScript"
+    ],
+    "license": "GROWPRO",
+    "main": "index.js",
+    "types": "index.js",
+    "packageManager": "pnpm@8.3.0",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jeykher/growpro-test-code.git"
+    },
     "scripts": {
         "build": "next build",
         "dev": "next dev",
@@ -9,14 +36,17 @@
         "start": "next start"
     },
     "dependencies": {
+        "next": "13.3.0",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "sass": "1.62.0"
+    },
+    "devDependencies": {
         "@types/node": "18.15.11",
         "@types/react": "18.0.37",
         "@types/react-dom": "18.0.11",
         "eslint": "8.38.0",
         "eslint-config-next": "13.3.0",
-        "next": "13.3.0",
-        "react": "18.2.0",
-        "react-dom": "18.2.0",
         "typescript": "5.0.4"
     }
 }

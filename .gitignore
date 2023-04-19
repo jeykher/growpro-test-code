@@ -1,35 +1,88 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Gitignore File Configuration
 
-# dependencies
-/node_modules
-/.pnp
+# Debugger
+.pnpm-debug.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+#.env
+.env.development.local
+.env.local
+.env.production.local
+.env.test.local
+*.local
+
+# Files
+uploads
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Logs
+*.log
+lerna-debug.log*
+logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# NodeJS
+.pnp
 .pnp.js
+node_modules
 
-# testing
-/coverage
-
-# next.js
+# NextJS
+.next/
 /.next/
-/out/
+build
 
-# production
+# next-env.d.ts
+/out/
+out/
+
+# OS
+.DS_Store
+
+# Others
+*.pem
+desktop.ini
+
+# Production
 /build
+/dist
+dist-ssr
+
+# Testing
+coverage
+/coverage
+/.nyc_output
+
+# TurboRepo
+.turbo
+
+# TypeScript
+*.tsbuildinfo
 
 # misc
 .DS_Store
 *.pem
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# local env files
-.env*.local
-
-# vercel
+# Vercel
 .vercel
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# Vscode
+!.vscode/extensions.json
+!.vscode/extensions.json
+!.vscode/launch.json
+#!.vscode/settings.json
+!.vscode/tasks.json
+#.vscode/*
