@@ -14,7 +14,8 @@
             "@/*": ["./*"],
             "@App/*": ["./app/*"],
             "@Bike/*": ["./Bike/*"],
-            "@Core/*": ["./Core/*"]
+            "@Core/*": ["./Core/*"],
+            "@Packages/*": ["./Packages/*"]
         },
         "plugins": [
             {

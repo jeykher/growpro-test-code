@@ -49,17 +49,28 @@
     // Material Icon theme
     "material-icon-theme.folders.associations": {
         "bike": "shader",
+        "brands": "proto",
         "domain": "resource",
         "entities": "ngrx-entities",
         "globals": "global",
-        "infrastructure": "buildkite"
+        "growpro-react-ts-ui": "mobile",
+        "growprobrand": "react-components",
+        "growpronavbar": "react-components",
+        "infrastructure": "buildkite",
+        "jiot-react-themeble-ts-ui": "decorators",
+        "navbars": "app",
+        "ui": "delta"
     },
     "material-icon-theme.files.associations": {
         "*.entity.ts": "sketch",
+        "*.type.ts": "lua",
         "app.tsx": "azure",
+        "fonts.scss": "fortran",
         "globals.scss": "blink",
         "layout.tsx": "mjml",
-        "page.tsx": "contributing"
+        "page.tsx": "contributing",
+        "themecontext.tsx": "pinejs",
+        "usetheme.tsx": "svgr"
     },
     // Peacok Configuration
     "workbench.colorCustomizations": {

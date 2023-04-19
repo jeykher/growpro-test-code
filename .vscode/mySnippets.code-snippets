@@ -1,3 +1,35 @@
 {
     // Snippets File Configuration
+    // React TypeScript
+    "React TypeScript Functional Arrow Component": {
+        "prefix": "react-ts-functional-arrow-component",
+        "body": [
+          "import type { CSSProperties, FC as ReactFC } from 'react';",
+          "",
+          "interface Props {",
+          "    className?: string | undefined;",
+          "    style?: CSSProperties;",
+          "}",
+          "",
+          "export const Component: ReactFC<Props> = ({",
+          "    className,",
+          "    style,",
+          "    ...rest",
+          "}) => (",
+          "    <div",
+          "        className={",
+          "            className ? `${className}` : ``",
+          "        }",
+          "        style={{",
+          "            ...style",
+          "        }}",
+          "        {...rest}",
+          "    >",
+          "        Component",
+          "    </div>",
+          ");",
+          ""
+        ],
+        "description": "React TypeScript Functional Arrow Component"
+    }
 }

@@ -1,4 +1,7 @@
+// * Debo obtener el color del navbar brand desde el theme
 import type { ReactElement, ReactNode } from 'react';
+
+import { GrowProBrand, GrowProNavbar } from '@Packages/ui/growpro-react-ts-ui';
 
 import '@Core/infrastructure/styles/globals/globals.scss';
 
@@ -11,12 +14,21 @@ interface Props {
     children: ReactNode;
 }
 
-const RootLayout = ({
-    children
-}: Props): ReactElement => {
+const RootLayout = ({ children }: Props): ReactElement => {
     return (
         <html lang="ES-es">
-            <body>{children}</body>
+            <body>
+                <GrowProNavbar
+                    brand={
+                        <GrowProBrand
+                            color="#ff5766"
+                            height="28px"
+                            width="188.297px"
+                        />
+                    }
+                />
+                {children}
+            </body>
         </html>
     );
 };
