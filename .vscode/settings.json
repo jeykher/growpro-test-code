@@ -49,7 +49,12 @@
     // Material Icon theme
     "material-icon-theme.folders.associations": {
         "bike": "shader",
+        "bikecard": "react-components",
         "brands": "proto",
+        "button": "react-components",
+        "buttons": "include",
+        "card": "react-components",
+        "cards": "queue",
         "domain": "resource",
         "entities": "ngrx-entities",
         "globals": "global",
@@ -70,6 +75,7 @@
         "layout.tsx": "mjml",
         "page.tsx": "contributing",
         "themecontext.tsx": "pinejs",
+        "usehover.tsx": "svgr",
         "usetheme.tsx": "svgr"
     },
     // Peacok Configuration
