@@ -50,6 +50,7 @@
     "material-icon-theme.folders.associations": {
         "bike": "shader",
         "bikecard": "react-components",
+        "bikes": "routes",
         "brands": "proto",
         "button": "react-components",
         "buttons": "include",
@@ -79,6 +80,7 @@
         "layout.tsx": "mjml",
         "page.tsx": "contributing",
         "providers.tsx": "tree",
+        "route.ts": "lib",
         "themecontext.tsx": "pinejs",
         "themes.ts": "julia",
         "usehover.tsx": "svgr",
