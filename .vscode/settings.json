@@ -48,14 +48,15 @@
     ],
     // Material Icon theme
     "material-icon-theme.folders.associations": {
+        "adapters": "scala",
         "bike": "shader",
         "bikecard": "react-components",
+        "bikelist": "react-components",
         "bikes": "routes",
         "brands": "proto",
         "button": "react-components",
         "buttons": "include",
         "card": "react-components",
-        "cardlist": "react-components",
         "cards": "queue",
         "domain": "resource",
         "entities": "ngrx-entities",
@@ -67,11 +68,16 @@
         "jiot-react-themeble-ts-ui": "decorators",
         "navbar": "react-components",
         "navbars": "app",
+        "presenters": "delta",
+        "sass-mixins": "sass",
+        "typescript-array-library": "typescript",
         "ui": "delta"
     },
     "material-icon-theme.files.associations": {
         "*.entity.ts": "sketch",
+        "*.function.ts": "sas",
         "*.interface.ts": "less",
+        "*.presenter.ts": "sentry",
         "*.theme.ts": "renovate",
         "*.type.ts": "lua",
         "app.tsx": "azure",

@@ -1,0 +1,8 @@
+/* Sass Container Mixins */
+
+@mixin maxContainer($maxWidth: 100%) {
+    width: 100%;
+    max-width: $maxWidth;
+    margin-left: auto;
+    margin-right: auto;
+}

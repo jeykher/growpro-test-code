@@ -1,0 +1,8 @@
+/* Sass Grid Mixins */
+
+@mixin autoGridContainer($gap: 0, $gridAutoRows: auto, $gridTemplateColumns: repeat(auto-fit, minmax(100%, 1fr))) {
+    display: grid;
+    gap: $gap;
+    grid-auto-rows: $gridAutoRows;
+    grid-template-columns: $gridTemplateColumns;
+}

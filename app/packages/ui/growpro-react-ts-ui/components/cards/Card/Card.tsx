@@ -49,7 +49,7 @@ export const Card: ReactFC<Props> = ({
                 className={styles.image}
                 fill
                 priority
-                sizes="100vw"
+                sizes="(max-width: 768px) 100vw"
                 src={imagePath}
             />
         </div>

@@ -1,26 +1,34 @@
 import type { ReactElement } from 'react';
 
-import { CardList } from '@App/components';
+import { BikeList } from '@App/components';
+
+import { bikesPresenter } from '@Bike/adapters/presenters';
+
+import styles from './styles/HomePage.module.scss';
 
 const getData = async () => {
     const response = await fetch('http://localhost:3000/api/bike/bikes', { cache: 'no-store' });
-    return response.json();
-}
+    const data = await response.json();
+    return {
+        ...data,
+        data: bikesPresenter(data.data)
+    };
+};
 
 const HomePage = async (): Promise<ReactElement> => {
-    const { data: bikes } = await getData();
-    console.log(bikes);
+    const { data: bikes, type: responseType } = await getData();
     return (
-        <div
-            style={{
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                paddingTop: '10rem'
-            }}
+        <main
+            className={styles.homepage}
         >
-            <CardList />
-        </div>
+            {
+                responseType === 'data' && (
+                    <BikeList 
+                        bikes={bikes}
+                    />
+                )
+            }
+        </main>
     );
 };
 
