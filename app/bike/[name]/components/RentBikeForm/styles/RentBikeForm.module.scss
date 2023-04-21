@@ -1,0 +1,54 @@
+.form {
+    border-radius: 1rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 1rem 0;
+    .title {
+        color: #878787;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2rem;
+        padding: 0 1.5rem;
+        margin-bottom: 2rem;
+        user-select: none;
+        pointer-events: none;
+    }
+    .row {
+        padding: 1rem 1.5rem;
+        gap: 1rem;
+        @media screen and (min-width: 900px) {
+            gap: 0;
+        }
+    }
+    .dayscontainer {
+        padding: 1rem 1.5rem 0 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        .days {
+            color: #878787;
+            user-select: none;
+            pointer-events: none;
+            font-size: 1rem;
+            color: #7a33cc;
+            font-style: normal;
+            font-weight: 500;
+            margin-left: 1rem;
+        }
+        .icon {
+            color: #7a33cc;
+            font-size: 3rem;
+            user-select: none;
+            pointer-events: none;
+        }
+    }
+    .btngroup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 1.5rem 1rem 1.5rem;
+        gap: 1rem;
+        @media screen and (min-width: 900px) {
+            justify-content: flex-end;
+        }
+    }
+}

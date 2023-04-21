@@ -1,7 +1,7 @@
 @import '@Packages/common/sass-mixins/containerMixins.scss';
 @import '@Packages/common/sass-mixins/gridMixins.scss';
 
-.homepage {
+.page {
     @include maxContainer(85%);
     @include autoGridContainer(1rem, auto, repeat(auto-fill, minmax(250px, 1fr)));
     justify-items: center;

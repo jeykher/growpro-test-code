@@ -1,0 +1,98 @@
+.card {
+    background: linear-gradient(83.33deg,#7733ce,#ff5766);
+    border-radius: 1rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(12, 1fr);
+    }
+    .product {
+        background-color: #ffffff;
+        grid-area: 1 / 1 / 1 / 1;
+        height: 350px;
+        padding: 3rem;
+        position: relative;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 35px;
+        border-bottom-right-radius: 35px;
+        @media screen and (min-width: 600px) and (max-width: 767px) {
+            padding: 4rem;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            padding: 2rem;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 100px;
+            grid-area: 1 / 7  / 1 / 13;
+        }
+        @media screen and (min-width: 1200px) {
+            padding: 2rem;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 100px;
+            grid-area: 1 / 8  / 1 / 13;
+        }
+        .image {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1rem;
+        padding: 2rem;
+        grid-area: 2 / 1 / 2 / 1;
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            align-items: flex-start;
+            grid-area: 1 / 1  / 1 / 7;
+        }
+        align-items: flex-start;
+        @media screen and (min-width: 1200px) {
+            grid-area: 1 / 1 / 1 / 8;
+        }
+        .title {
+            color: white;
+            font-size: 2.25rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.25;
+            pointer-events: none;
+            text-align: left;
+            user-select: none;
+        }
+        .tag {
+            border: none;
+            background-color: white;
+            color: #7a33cc;
+            border-radius: 20px;
+            padding: 0.6rem;
+            font-size: 0.8rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.25;
+            pointer-events: none;
+            text-align: left;
+            user-select: none;
+            @media screen and (min-width: 435px) and (max-width: 767px) {
+                font-size: 1rem;
+                padding: 0.8rem;
+            }
+            @media screen and (min-width: 768px) and (max-width: 1199px) {
+                font-size: 1rem;
+                padding: 0.8rem;
+            }
+            @media screen and (min-width: 1200px) {
+                margin-left: 1rem;
+                font-size: 1rem;
+                padding: 0.8rem;
+            }
+        }
+    }
+}

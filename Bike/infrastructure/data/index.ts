@@ -1,1 +1,1 @@
-export * from './bikes';
+export * from './bikes.data';

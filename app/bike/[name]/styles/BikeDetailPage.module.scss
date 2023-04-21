@@ -1,0 +1,6 @@
+@import '@Packages/common/sass-mixins/containerMixins.scss';
+
+.page {
+    @include maxContainer(60%);
+    padding: 4rem 0 3rem 0;
+}

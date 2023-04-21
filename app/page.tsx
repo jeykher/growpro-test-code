@@ -6,8 +6,8 @@ import { bikesPresenter } from '@Bike/adapters/presenters';
 
 import styles from './styles/HomePage.module.scss';
 
-const getData = async () => {
-    const response = await fetch('http://localhost:3000/api/bike/bikes', { cache: 'no-store' });
+const getBikes = async () => {
+    const response = await fetch('http://localhost:3000/api/bikes', { next: { revalidate: 10 } });
     const data = await response.json();
     return {
         ...data,
@@ -16,10 +16,10 @@ const getData = async () => {
 };
 
 const HomePage = async (): Promise<ReactElement> => {
-    const { data: bikes, type: responseType } = await getData();
+    const { data: bikes, type: responseType } = await getBikes();
     return (
         <main
-            className={styles.homepage}
+            className={styles.page}
         >
             {
                 responseType === 'data' && (

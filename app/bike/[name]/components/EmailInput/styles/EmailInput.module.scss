@@ -1,0 +1,17 @@
+.control {
+    display: flex;
+    flex-direction: column;
+    .inputcontainer {
+        align-items: center;
+        display: flex;
+        .input {
+            width: 95%;
+        }
+    }
+    .errorcontainer {
+        .error {
+            margin-top: 0.3rem;
+            color: #ff5766;
+        }
+    }
+}

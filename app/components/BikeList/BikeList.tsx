@@ -4,6 +4,8 @@ import type { FC as ReactFC } from 'react';
 
 import type { Bike } from '@Bike/domain/entities';
 
+import Link from 'next/link';
+
 import { Card } from '@Packages/ui/growpro-react-ts-ui';
 
 import { useTheme } from '@Packages/ui/jiot-react-themeble-ts-ui';
@@ -20,15 +22,19 @@ export const BikeList: ReactFC<Props> = ({
         <>
             {
                 bikes?.map((bike: Bike) => (
-                    <Card
+                    <Link
                         key={bike.id}
-                        borderColorButton={theme['--border-primary']}
-                        buttonBackground={theme['--secondary']}
-                        description={bike.type}
-                        hoverButtonBackground={theme['--hover-primary']}
-                        imagePath={bike.imageUrl}
-                        title={bike.name}
-                    />
+                        href={`/bike/${bike.name.replace(/\s+/g, '-').toLowerCase()}`}
+                    >                    
+                        <Card
+                            borderColorButton={theme['--border-primary']}
+                            buttonBackground={theme['--secondary']}
+                            description={bike.type}
+                            hoverButtonBackground={theme['--hover-primary']}
+                            imagePath={bike.imageUrl}
+                            title={bike.name}
+                        />
+                    </Link>
                 ))
             }
         </>
