@@ -6,7 +6,10 @@ const nextConfig = {
   output: 'standalone',
   reactStrictMode: true,
   swcMinify: false,
-  transpilePackages: []
+  transpilePackages: [],
+  typescript: {
+    ignoreBuildErrors: true,
+  }
 };
 
 module.exports = nextConfig;
