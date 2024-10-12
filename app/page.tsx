@@ -7,7 +7,7 @@ import { bikesPresenter } from '@Bike/adapters/presenters';
 import styles from './styles/HomePage.module.scss';
 
 const getBikes = async () => {
-    const response = await fetch('http://localhost:3000/api/bikes', { next: { revalidate: 10 } });
+    const response = await fetch(`${process.env.URL}/api/bikes`, { next: { revalidate: 10 } });
     const data = await response.json();
     return {
         ...data,

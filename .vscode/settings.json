@@ -138,7 +138,7 @@
     "typescript.enablePromptUseWorkspaceTsdk": true,
     // Vscode Editor
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true,
+        "source.fixAll.eslint": "explicit"
     },
     "editor.fontFamily": "'Victor Mono', Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true,
@@ -148,7 +148,5 @@
     "editor.minimap.enabled": false,
     // Vscode Features
     "editor.stickyTabStops": true,
-    "editor.stickyScroll.enabled": true,
-    // Vscode Workbench
-    "workbench.activityBar.visible": true
+    "editor.stickyScroll.enabled": true
 }
